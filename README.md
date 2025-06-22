@@ -1,5 +1,5 @@
 # online-car-rental
-# 🚗 Smart Car Rental System (with AI Help)
+# 🚗 Smart Car Rental System
 
 A responsive **Car Rental Website** built using **HTML**, **CSS**, **JavaScript**, **Bootstrap**, and integrated with an **AI Help Assistant**. This project provides a modern booking experience with smart user support.
 
