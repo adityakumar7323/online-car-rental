@@ -21,14 +21,3 @@ A responsive **Car Rental Website** built using **HTML**, **CSS**, **JavaScript*
 - 💬 Built using JavaScript & API-based logic (like ChatGPT or custom logic)
 - 📲 Works on desktop and mobile
 
----
-
-## 🖼️ Demo Screenshot (Chatbot UI Example)
-
-> _Add your screenshot here like:_  
-> `![Chatbot Screenshot](images/chatbot_ui.png)`
-
----
-
-## 📁 Project Structure
-
