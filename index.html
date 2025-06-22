@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SpeedyWheels - Car Rental</title>
+  <title>FeelIt - Car Rental</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
   <style>
     body, html {
       margin: 0;
@@ -12,13 +13,11 @@
       height: 100%;
       overflow-x: hidden;
     }
-
     .hero-video {
       position: relative;
       height: 100vh;
       overflow: hidden;
     }
-
     .hero-video video {
       position: absolute;
       top: 50%;
@@ -31,7 +30,6 @@
       transform: translate(-50%, -50%);
       object-fit: cover;
     }
-
     .hero-content {
       position: relative;
       z-index: 1;
@@ -39,7 +37,6 @@
       top: 40%;
       color: white;
     }
-
     .hero-overlay {
       position: absolute;
       top: 0;
@@ -49,18 +46,16 @@
       background: rgba(0,0,0,0.4);
       z-index: 0;
     }
-
     h1 {
       font-size: 4rem;
       font-weight: bold;
     }
-
     .btn-primary {
       padding: 12px 24px;
       font-size: 1.2rem;
       margin-top: 20px;
     }
-     .card {
+    .card {
       border-radius: 20px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
@@ -83,7 +78,7 @@
     }
     .arrow-btn {
       background-color: #ff5722;
-      color: Red;
+      color: white;
       border-radius: 50%;
       padding: 10px;
       text-decoration: none;
@@ -94,10 +89,29 @@
   </style>
 </head>
 <body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">FeelIt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- Hero Section with Video Background -->
 <section class="hero-video">
   <video autoplay muted loop>
-    <source src="https://videos.pexels.com/video-files/8630066/8630066-sd_640_360_25fps.mp4" type="video/mp4">
+    <source src="https://videos.pexels.com/video-files/4267808/4267808-sd_640_360_30fps.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
   <div class="hero-overlay"></div>
@@ -107,253 +121,729 @@
     <a href="#cars" class="btn btn-primary"> Cars</a>
   </div>
 </section>
+<!-- Cars Section -->
+<section id="cars" class="fleet-section">
+    <h2 class="fleet-title">Explore our perfect and extensive fleet</h2>
+ <p class="text-danger fw-bold">SUV</p>
+ <!-- Car Card 2 -->
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/mahindra-scorpio-gto-review-1.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">SCARPIO N 4X2</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Suv</span>
+        <img src="https://mahindramanukau.co.nz/wp-content/uploads/2024/01/DKP_0604-scaled.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">XUV 700</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;6000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgsrWSFUvHflER1tdWSaY01cIaao-_PiNFQ&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">EARTIGA</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;4000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://img.gaadicdn.com/images/carexteriorimages/large/Mahindra/Scorpio-Classic/10764/1690268502010/rear-right-side-48.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">SCARPIO S11</h5>
+          <p>Engine: 1797 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Bolero/10754/1740039123598/front-left-side-47.jpg?tr=w-360" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">BOLERO</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;3000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWqdfc_2lyH4Mc2omBdEmIvYM0z_aK_DsOxNTimpOpMk-s2RzSjiM1JuHVOD0bdwxYHMY&usqp=CAU" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">SAFARI</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;6000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://motoroctane.com/wp-content/uploads/2020/09/406.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">SUMO</h5>
+          <p>Engine: 1695 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;4000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFkmURMoKz_0xcQPqPUkcvLnzMdqMlRHAk0A&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">INNOVA</h5>
+          <p>Engine: 1790 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;7000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
 
-<!-- Content below hero -->
-<section id="cars" class="py-5 text-center">
-  <div class="container">
-    <h2 class="mb-4">Available Cars</h2>
-    <p>More content about your cars goes here...</p>
+
+
+
+<div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">SUV</span>
+        <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/04/27/Pictures/_d55fb3de-49fa-11e8-8699-4e17514b3033.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">XUV 500</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+    </div>
+  </div>
+  </section>
+  </section>
+<!-- Cars Section -->
+<section id="cars" class="fleet-section">
+   <h1 class="fleet-title"></h1>
+ <p class="text-danger fw-bold">sedan</p>
+
+  <div class="container mt-5">
+    <div class="d-flex flex-row overflow-auto gap-4">
+      
+      <!-- Car Card 1 -->
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmJTbjWo8ZYiEtj9to27GyywijmWsBRfhhg&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Honda City</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <!-- Car Card 2 -->
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsfmA0jZml4nsFOjJJeUV9nt2Jh47g7_G2w&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Ciaz</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_BwdfcaSBT7-9SPsHekhMEmAxTXYfw5Gdg&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Skoda Slavia</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;6000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEAnWCvoUeSnGt20vHjFvcfrwyahB1Xjdnyg&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Volkswagen Virtus</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;4000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhVyg9qWQQeNuKU_3_ffyev9jYut19IY7eg&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Tata Tigor</h5>
+          <p>Engine: 1797 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://www.financialexpress.com/wp-content/uploads/2025/02/Hyundai-Aura.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">AURA</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;3000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Suzuki_Dzire_1.2_GL_Sport_2018_%2840090671923%29.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Dzire</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;6000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9DzYYgEFgNGj0Rz0ZFUnwIqktpdRDdHeIA&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Honda Amaze</h5>
+          <p>Engine: 1695 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;4000/Day</p>
+         <a href="#contact" class="arrow-btn">
+             <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgpPkkO7SvoJVCF13MP1ILIlqKskJt2Kzlw&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">ETIOS</h5>
+          <p>Engine: 1790 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;7000/Day</p>
+        <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+<div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">sedan</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzFjLXRw6VKNZTg1MEakYvBseh1TXmStQUA&s" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Varna</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;5000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+    </div>
+  </div>
+  <!--luxury car section-->
+  </section>
+  <section id="cars" class="fleet-section">
+   <h1 class="fleet-title"></h1>
+ <p class="text-danger fw-bold">Luxury</p>
+
+  <div class="container mt-5">
+    <div class="d-flex flex-row overflow-auto gap-4">
+      
+      <!-- Car Card 1 -->
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://carsales.pxcrush.net/carsales/car/dealer/d307eq5uz58t3gs19wh1k5j7i.jpg?pxc_method=fitfill&pxc_bgtype=self&pxc_size=720,480" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">BMW X1 <!DOCTYPE html>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+              <head>
+                  <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+                  <title>BMW X5</title>
+              </head>
+              <body>
+              </body>
+          </html></h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;20000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <!-- Car Card 2 -->
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Mercedes-Benz_W223_IMG_6663.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Mercedes-Benz S-Class</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;25000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/2019_BMW_740Li_Automatic_facelift_3.0.jpg/1200px-2019_BMW_740Li_Automatic_facelift_3.0.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">BMW 7 Series</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;26000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Audi A8</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;20000/Day</p>
+          <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/2010-2011_Lexus_LS460_--_10-04-2011.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Lexus LS</h5>
+          <p>Engine: 1797 cc</p>
+          <p>Transmission: Manual</p>
+          <p class="price-tag">&#8377;35000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://imgd.aeplcdn.com/1920x1080/ec/65/BE/14302/img/m/Jaguar-XJ-L-Right-Front-Three-Quarter-31020_ol.jpg?v=201711021421&q=80&q=80" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Jaguar XJ</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;30000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://images.news18.com/ibnlive/uploads/2021/03/1616046510_porsche-panamera_28.png?impolicy=website&width=0&height=0" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Porsche Panamera</h5>
+          <p>Engine: 1597 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;35000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://financialexpresswpcontent.s3.amazonaws.com/uploads/2019/12/2020-Audi-A6-660.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">Audi A6</h5>
+          <p>Engine: 1695 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;20000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+      <div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/X7/10571/1732947969390/front-view-118.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">BMW X7</h5>
+          <p>Engine: 1790 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;25000/Day</p>
+        <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+<div class="card p-3" style="min-width: 250px;">
+        <span class="badge bg-light text-dark mb-2">Luxury</span>
+        <img src="https://images.overdrive.in/wp-content/uploads/2014/11/2014-BMW-X3-20d-4.jpg" class="card-img-top" alt="Thar">
+        <div class="card-body">
+          <h5 class="card-title">BMW X3</h5>
+          <p>Engine: 1497 cc</p>
+          <p>Transmission: AT</p>
+          <p class="price-tag">&#8377;25000/Day</p>
+         <a href="#contact" class="arrow-btn">
+  <i class="bi bi-box-arrow-up-right"></i>
+</a>
+    </div>
+  </div>
+  
+      </section>
+ 
+
+<!-- Services -->
+<section class="bg-light py-5" id="services">
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Why Choose Us</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4"><i class="fas fa-clock feature-icon mb-3"></i><h4>24/7 Support</h4><p>Round the clock customer service</p></div>
+      <div class="col-md-4"><i class="fas fa-tag feature-icon mb-3"></i><h4>Best Prices</h4><p>Competitive rates guaranteed</p></div>
+      <div class="col-md-4"><i class="fas fa-shield-alt feature-icon mb-3"></i><h4>Fully Insured</h4><p>Comprehensive insurance coverage</p></div>
+    </div>
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">ZoomGos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cars">Cars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    
-    class="fleet-section">
-  <p class="text-danger fw-bold">*SUV /P>
-  <h2 class="fleet-title">Explore our perfect and extensive fleet</h2>
-
-  <div class="container mt-5">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-      <!-- Car Card 1 -->
-      <div class="col">
-        <div class="card p-3">
-          <span class="badge bg-light text-dark mb-2">SUV Car</span>
-          <img src="https://i.pinimg.com/736x/e3/f7/fa/e3f7fa9009113dd44d58dd9e9e9d3123.jpg" class="card-img-top" alt="Thar">
-          <div class="card-body">
-            <h5 class="card-title">Mahindra Thar 4X4</h5>
-            <p><i class="bi bi-gear"></i> Engine: 1497 cc</p>
-            <p><i class="bi bi-shift"></i> Transmission: Manual</p>
-            <p class="price-tag">&#8377;5000/Day</p>
-            <a href="#" class="arrow-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+<!-- Contact Form -->
+<section class="py-5" id="contact">
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Book Now</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="bookingForm">
+          <div class="mb-3"><input type="text" class="form-control" placeholder="Full Name" required></div>
+          <div class="mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="Phone" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="Aadhar" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="Car" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="Date" required></div>
+          <div class="mb-3"><input type="tel" class="form-control" placeholder="cars_ID" required></div>
+          <div class="row mb-3">
+          <div class="row mb-3">
+            <div class="col"><input type="date" class="form-control" required></div>
+            <div class="col"><input type="date" class="form-control" required></div>
           </div>
-        </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+        </form>
       </div>
+    </div>
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FeelIt - Car Rental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
 
-      <!-- Car Card 2 -->
-      <div class="col">
-        <div class="card p-3">
-          <span class="badge bg-light text-dark mb-2">SUV Car</span>
-          <img src="https://i.cdn.newsbytesapp.com/images/l62520220630103503.jpeg" class="card-img-top" alt="Scorpio">
-          <div class="card-body">
-            <h5 class="card-title">Mahindra Scorpio N</h5>
-            <p>Engine: 2694cc – 2755cc</p>
-            <p>Transmission: AT/M</p>
-            <p class="price-tag">&#8377;6000/Day</p>
-            <a href="#" class="arrow-btn"><i class="bi bi-box-arrow-up-right"></i></a>
-          </div>
-        </div>
-      </div>
+    header {
+      background: #ff4d4d;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
 
-      <!-- Car Card 3 -->
-      <div class="col">
-        <div class="card p-3">
-          <span class="badge bg-light text-dark mb-2">SUV Car</span>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBPLCxBN_QZr5tb4imFL8C3vBy-BLkCvTIA&s" class="card-img-top" alt="Rubicon">
-          <div class="card-body">
-            <h5 class="card-title">XUV700</h5>
-            <p>Engine: 1995cc</p>
-            <p>Transmission: AT</p>
-            <p class="price-tag">&#8377;5000/Day</p>
-            <a href="#" class="arrow-btn"><i class="bi bi-box-arrow-up-right"></i></a>
-          </div>
-        </div>
-      </div>
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
 
-      <!-- Car Card 4 -->
-      <div class="col">
-        <div class="card p-3">
-          <span class="badge bg-light text-dark mb-2">SUV Car</span>
-          <img src="https://shivamautozone.com/wp-content/uploads/2024/10/ERTIGA_DIGNITY_BROWN-1.webp" class="card-img-top" alt="Fortuner">
-          <div class="card-body">
-            <h5 class="card-title">EARTIGA</h5>
-            <p>Engine: 2755 cc</p>
-            <p>Transmission: AT/M</p>
-            <p class="price-tag">&#8377;4000/Day</p>
-            <a href="#" class="arrow-btn"><i class="bi bi-box-arrow-up-right"></i></a>
-          </div>
-        </div>
-      </div>
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
 
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .car-listing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .car {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 300px;
+    }
+
+    .car h3 {
+      margin: 0;
+      color: #ff4d4d;
+    }
+
+    .car p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .contact-btn {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .contact-btn a {
+      flex: 1;
+      text-align: center;
+      padding: 8px;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .call {
+      background: #007bff;
+    }
+
+    /* Chat Assistant */
+    #chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4d4d;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+
+    #chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 300px;
+      max-height: 400px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 9999;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #chat-header {
+      background: #0000FF;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #chat-body {
+      padding: 10px;
+      flex: 1;
+      overflow-y: auto;
+      background: #f9f9f9;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #chat-body .user,
+    #chat-body .bot {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 15px;
+      max-width: 80%;
+    }
+
+    #chat-body .user {
+      background: #e1f5fe;
+      align-self: flex-end;
+    }
+
+    #chat-body .bot {
+      background: #eeeeee;
+      align-self: flex-start;
+    }
+
+    #chat-input-area {
+      display: flex;
+      padding: 10px;
+      background: white;
+      border-top: 1px solid #ddd;
+    }
+
+    #chat-input-area input {
+      flex: 1;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    #chat-input-area button {
+      background: #ff4d4d;
+      border: none;
+      color: white;
+      margin-left: 5px;
+      border-radius: 20px;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+
+  <!-- Chat Assistant -->
+  <div id="chat-button" onclick="toggleChat()">💬</div>
+
+  <div id="chat-popup">
+    <div id="chat-header">
+      FeelIt Assistant
+      <span style="cursor:pointer;" onclick="toggleChat()">×</span>
+    </div>
+    <div id="chat-body">
+      <div class="bot">Hi! I'm your FeelIt Assistant. Ask me anything.</div>
+    </div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">➤</button>
     </div>
   </div>
 
+  <script>
+    function toggleChat() {
+      const popup = document.getElementById('chat-popup');
+      popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+    }
 
-    
-    <section class="bg-light py-5" id="services">
-        <div class="container py-5">
-            <h2 class="text-center mb-5">Why Choose Us</h2>
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <i class="fas fa-clock feature-icon mb-3"></i>
-                    <h4>24/7 Support</h4>
-                    <p>Round the clock customer service</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-tag feature-icon mb-3"></i>
-                    <h4>Best Prices</h4>
-                    <p>Competitive rates guaranteed</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-shield-alt feature-icon mb-3"></i>
-                    <h4>Fully Insured</h4>
-                    <p>Comprehensive insurance coverage</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    function sendMessage() {
+      const input = document.getElementById('chat-input');
+      const message = input.value.trim();
+      if (!message) return;
 
-    <!-- Contact -->
-    <section class="py-5" id="contact">
-        <div class="container py-5">
-            <h2 class="text-center mb-5">Book Now</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="bookingForm">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone" required>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="date" class="form-control" required>
-                            </div>
-                            <div class="col">
-                                <input type="date" class="form-control" required>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+      const chatBody = document.getElementById('chat-body');
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
-        <div class="container text-center">
-            <div class="social-links mb-3">
-                <a href="#" class="text-light mx-3"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-light mx-3"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#" class="text-light mx-3"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-            <p>&copy; 2023 SpeedWheels. All rights reserved</p>
-        </div>
-    </footer>
+      const userDiv = document.createElement('div');
+      userDiv.className = 'user';
+      userDiv.textContent = message;
+      chatBody.appendChild(userDiv);
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Car data
-        const cars = [
-            {
-                model: "swift",
-                price: "1200/day",
-                type: "Seden",
-                image: "https://gomahabaleshwar.com/wp-content/uploads/2024/10/Maruti-Suzuki-Swift-1-e1730593149295-900x600.jpeg",
-                seats: 5,
-                transmission: "Manual"
-            },
-            {
-                model: "BMW X5",
-                price: "$199/day",
-                type: "SUV",
-                image: "https://source.unsplash.com/random/800x600/?bmw",
-                seats: 5,
-                transmission: "Automatic"
-            },
-            {
-                model: "Mercedes C-Class",
-                price: "$149/day",
-                type: "Luxury",
-                image: "https://source.unsplash.com/random/800x600/?mercedes",
-                seats: 5,
-                transmission: "Automatic"
-            }
-        ];
+      const botDiv = document.createElement('div');
+      botDiv.className = 'bot';
+      botDiv.textContent = getBotResponse(message);
+      chatBody.appendChild(botDiv);
 
-        // Generate car cards
-        const carList = document.getElementById('car-list');
-        cars.forEach(car => {
-            const carCard = `
-                <div class="col-md-4">
-                    <div class="card car-card h-100">
-                        <img src="https://gomahabaleshwar.com/wp-content/uploads/2024/10/Maruti-Suzuki-Swift-1-e1730593149295-900x600.jpeg">
-                        <div class="card-body">
-                            <h5 class="card-title">${car.model}</h5>
-                            <p class="card-text">
-                                <i class="fas fa-car"></i> ${car.type}<br>
-                                <i class="fas fa-dollar-sign"></i> ${car.price}<br>
-                                <i class="fas fa-users"></i> ${car.seats} Seats<br>
-                                <i class="fas fa-cog"></i> ${car.transmission}
-                            </p>
-                            <button href=#"Book Now" class="btn btn-primary w-100">Rent Now</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-            carList.innerHTML += carCard;
-        });
+      input.value = '';
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+    function getBotResponse(msg) {
+      msg = msg.toLowerCase();
 
-        // Form submission
-        document.getElementById('bookingForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your booking! We will contact you shortly.');
-            this.reset();
-        });
+      if (msg.includes("sedan"))
+        return "Sure! We have Dzire at ₹13/km and Etios at ₹14/km. Perfect for city rides.";
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+      if (msg.includes("suv"))
+        return "We offer SUVs like Thar (₹18/km) and Safari (₹16/km) – ideal for rugged travel!";
+
+      if (msg.includes("book") || msg.includes("rent"))
+        return "To book a car, contact us via WhatsApp or call using the buttons provided.";
+
+      if (msg.includes("price") || msg.includes("rate"))
+        return "Our pricing starts at ₹13/km and goes up to ₹18/km depending on the vehicle.";
+
+      if (msg.includes("available") || msg.includes("availability"))
+        return "Yes! Most vehicles are available. Just message or call us to confirm.";
+
+      if (msg.includes("contact"))
+        return "You can contact us through the WhatsApp or Call buttons next to each car.";
+
+      if (msg.includes("location") || msg.includes("where"))
+        return "We are based in Pune, Maharashtra. Delivery is available depending on distance.";
+
+      if (msg.includes("petrol") || msg.includes("diesel"))
+        return "We have both petrol and diesel options available for your preference.";
+
+      if (msg.includes("automatic") || msg.includes("manual"))
+        return "We've got both manual and automatic cars! Check the listings for details.";
+
+      return "I'm here to help! Ask me about cars, pricing, booking, or anything else.";
+    }
+  </script>
 </body>
 </html>
